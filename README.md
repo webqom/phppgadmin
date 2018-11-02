@@ -1,7 +1,7 @@
 # phppgadmin
 Install PostgreSQL in XAMPP (PHP 7+) on Windows
 
-#Installing postgreSQL
+# Installing postgreSQL
 
 Download the postgreSQL installer from EnterpriseDB. Download the postgreSQL 9.2 as you might face frequent logout issue.
 Run the installer and follow the on-screen instruction.
@@ -10,7 +10,7 @@ You may skip the Stack Builder section.
 You will be prompted to set a password for postgres root user.
 By now, pgSQL has been installed.
 
-#Getting postgreSQL to talk with PHP
+# Getting postgreSQL to talk with PHP
 
 Open php.ini file located in C:\xampp\php.
 Uncomment the following lines in php.ini
@@ -19,7 +19,7 @@ extension=php_pgsql.dll
 Restart Apache
 Done.
 
-#Integrating phpPgAdmin to XAMPP – postgreSQL Database Administration tool
+# Integrating phpPgAdmin to XAMPP – postgreSQL Database Administration tool
 
 To download phpPgAdmin, go to the Github repository and clone the repository to C:\xampp\phppgadmin.
 Or download the repository as a Zip, and extract the content to C:\xampp\phppgadmin.
@@ -30,7 +30,7 @@ $conf['servers'][0]['pg_dump_path'] = 'C:\xampp\pgsql\10\bin\pg_dump.exe';
 $conf['servers'][0]['pg_dumpall_path'] = 'C:\xampp\pgsql\10\bin\pg_dumpall.exe';
 $conf['extra_login_security'] = false;
 
-#Virtual Host Setup In Apache
+# Virtual Host Setup In Apache
 
 Edit XAMPP’s httpd-xampp.conf and add the below code.
 
